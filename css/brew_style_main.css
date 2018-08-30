@@ -1,0 +1,132 @@
+body {	
+	/* =====================================================
+	This pattern is downloaded from www.subtlepatterns.com  
+	If you need more, that's where to get'em.
+	======================================================== */
+	background-image: url("..\\pic\\dark-grey-terrazzo.png");
+}
+
+#container {
+	
+	clear: both;
+	padding: 20px 2% 10px 2%;
+	margin: 0 auto 0 auto;
+	width: 1000px;
+	border: 2px orange solid;
+	border-radius: 10px;
+	color: orange;	
+	box-shadow: 0 6px 10px 0 orange;
+	text-align: center;
+	background-image: url("..\\pic\\dark_stripes.png");
+}
+
+#top_banner img {
+	width: 100%;
+	height: 400px;
+}
+
+#footer
+{
+	clear: both;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.biography {
+	float: left;
+	height: 276px;
+	margin: 0 0 20px 0;
+	padding: 2%;
+	border: 2px orange dashed;
+	text-align: left;
+	overflow: hidden;
+}
+
+.biography img {
+	margin-right: 2%;
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.biography h2 {
+	font-weight: bold;
+}
+
+/* -------------------- Stylizacja menu strony głównej -------------------- */
+#menu
+{
+	width: 100%;
+	height: 40px;
+	margin: 10px;
+	text-align: center;
+}
+
+#menu ol
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 160%; /*Tak jakby interlinia.*/
+	display: inline-block; /*Powoduje wyśrodkowanie poszczególnych bloków w menu poprzez przywrócenie działania text-align z #menu.*/
+}
+
+#menu ol > li /*Stylizuje potomków li rodzica ol, który znajduje się w #menu.*/
+{
+	float: left;
+	height: 30px;
+	margin: 5px 0 5px 0;
+	width: 148px;
+	border-right: 2px dotted white;
+}
+
+#menu ol > li:hover
+{
+	background-color: #404040;
+}
+
+#menu ol a /*Tylko linki znajdujące się wewnątrz listy numerowanej wewnątrz menu.*/
+{
+	color: white;
+	text-decoration: none;
+	display: block; /*Umożliwi to nadanie linkom konkretnych szerokości i wysokości.*/
+}
+
+#menu ul a /*Tylko linki znajdujące się wewnątrz listy nienumerowanej wewnątrz menu.*/
+{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#menu ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: none; /*W ogóle nie wyświetlaj listy ul.*/
+}
+
+#menu ol > li > ul > li
+{
+	width: 150px;
+	position: relative;
+	background-color: #666666;
+	font-size: 12px;
+	z-index: 500; /*Żeby zasłaniało większość elementów.*/
+	border-top: 2px dotted white;
+}
+
+#menu ol > li > ul > li:hover
+{
+	background-color: #404040
+}
+
+#menu ol > li:hover > ul /*Po najechaniu na potomka ol w #menu zmień właściwości potomka ul rodzica tego li.*/
+{
+	display: block;
+}
+
+/* -------------------- Koniec stylizacji menu strony głównej -------------------- */
