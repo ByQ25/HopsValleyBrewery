@@ -1,0 +1,21 @@
+.biography {
+	float: left;
+	height: 276px;
+	width: 1000px;
+	margin: 0 0 20px 0;
+	padding: 2%;
+	border: 2px rgb(250, 113, 34) dashed;
+	text-align: left;
+	overflow: hidden;
+}
+
+.biography img {
+	margin-right: 2%;
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.biography h2 {
+	font-weight: bold;
+}
